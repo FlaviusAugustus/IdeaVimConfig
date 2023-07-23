@@ -1,0 +1,45 @@
+" ---Leader key---
+let mapleader=","
+
+" ---Common---
+set number
+set scrolloff=5
+set visualbell
+set showmode
+set ignorecase
+set smartcase
+set incsearch
+
+" ---Remaps---
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR> 
+" Run and Debug
+nnoremap <leader>r :action Run<CR>
+nnoremap <leader>s :action Stop<CR>
+nnoremap <leader>d :action Debug<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
+" File manipulation
+nnoremap K :action NextTab<CR>
+nnoremap J :action PreviousTab<CR>
+" Plugin remaps
+" easymotion
+map <leader>F <Plug>(easymotion-s)
+map <leader>f <Plug>(easymotion-f)
+" nerdtree
+map <c-t> :NERDTree<CR>
+
+" Other
+nmap [[ :action MethodUp<CR>
+nmap ]] :action MethodDown<CR>
+
+" ---Plugins---
+Plug 'tpope/vim-commentary'
+set easymotion
+set nerdtree
+set surround
+set highlightedyank
+set which-key
+set notimeout
+
+
+
