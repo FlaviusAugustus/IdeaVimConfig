@@ -1,5 +1,5 @@
 " ---Leader key---
-let mapleader=","
+let mapleader=" "
 
 " ---Common---
 set number
@@ -13,6 +13,7 @@ set incsearch
 " ---Remaps---
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR> 
+nnoremap <leader>m :action QuickJavaDoc<CR>
 " Run and Debug
 nnoremap <leader>r :action Run<CR>
 nnoremap <leader>s :action Stop<CR>
@@ -40,6 +41,3 @@ set surround
 set highlightedyank
 set which-key
 set notimeout
-
-
-
